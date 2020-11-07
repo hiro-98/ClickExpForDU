@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "ClickExpForDU",
+  "version": "1.0.0",
+  "description": "デカールアップロード時の同意クリック領域を拡張します。",
+  "permissions": [
+    "declarativeContent"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.gran-turismo.com/*/gtsport/user/decal-uploader"
+      ],
+      "run_at": "document_end",
+      "js": [
+        "click-area-expansion.js"
+      ]
+    }
+  ]
+}
